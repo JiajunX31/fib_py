@@ -12,6 +12,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: run tests
-        run: python -m unittest discover ./tests
+        run: python -m unittest discover
       - name: run type checking
         run: mypy fib_py

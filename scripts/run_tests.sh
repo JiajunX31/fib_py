@@ -5,6 +5,6 @@ cd $SCRIPTPATH
 cd ..
 
 source venv/bin/activate
-export PYTHONPATH="./flitton_fib_py"
+export PYTHONPATH="./fib_py"
 
 python -m unittest discover
