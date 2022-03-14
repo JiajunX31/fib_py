@@ -7,7 +7,7 @@ with open("README.md", "r") as f:
     ld = f.read()
 
 with open(
-    str(pathlib.Path(__file__).parent.absolute()) + "fib_py/version.py", "w"
+    str(pathlib.Path(__file__).parent.absolute()) + "/fib_py/version.py", "w"
 ) as f:
     version = f.read().split("=")[1].replace("'", "")
 
