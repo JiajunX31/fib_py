@@ -17,6 +17,6 @@ jobs:
         run: mypy fib_py
       - name: pypi
         env:
-          TWINE_USERNAME: ${{secrets.TWINE_USERNAME}}
+          TWINE_USERNAME: ${{ secrets.TWINE_USERNAME }}
         run: |
           echo "$TWINE_USERNAME"
