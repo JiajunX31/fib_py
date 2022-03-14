@@ -25,6 +25,8 @@ setup(
             "fib-number = fib_py.cmd.fib_num:fib_num",
         ]
     },
+    install_requires=["PyYAML>=6.0", "dill>=0.3.4"],
+    extras_require={"server": ["Flask>=2.0.0"]},
     python_requires=">=3",
     tests_require=["pytest"],
 )
