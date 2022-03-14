@@ -2,8 +2,6 @@ import argparse
 
 from fib_py.fib_calcs.fib_num import recurring_fibonacci_number
 
-# trigger build
-
 
 def fib_num() -> None:
     parser = argparse.ArgumentParser(description="Calculate Fibonacci numbers")
