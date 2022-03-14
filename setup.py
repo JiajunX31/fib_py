@@ -1,12 +1,19 @@
 from importlib.metadata import entry_points
 from setuptools import find_packages, setup
 
+import pathlib
+
 with open("README.md", "r") as f:
     ld = f.read()
 
+with open(
+    str(pathlib.Path(__file__).parent.absolute()) + "fib_py/version.py", "w"
+) as f:
+    version = f.read().split("=")[1].replace("'", "")
+
 setup(
     name="fib_py",
-    version="1.0.0",
+    version=version,
     author="Jiajun Xie",
     author_email="kifferob9@outlook.com",
     description="Calculates a Fibonacci number",
