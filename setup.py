@@ -1,3 +1,4 @@
+from importlib.metadata import entry_points
 from setuptools import find_packages, setup
 
 with open("README.md", "r") as f:
@@ -19,6 +20,11 @@ setup(
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",
     ],
+    entry_points={
+        "console_scripts": [
+            "fib-number = fib_py.cmd.fib_num:fib_num",
+        ]
+    },
     python_requires=">=3",
     tests_require=["pytest"],
 )
