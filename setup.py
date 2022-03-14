@@ -6,7 +6,7 @@ with open("README.md", "r") as f:
 
 setup(
     name="fib_py",
-    version="0.0.1",
+    version="1.0.0",
     author="Jiajun Xie",
     author_email="kifferob9@outlook.com",
     description="Calculates a Fibonacci number",
