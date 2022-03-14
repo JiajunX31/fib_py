@@ -18,6 +18,5 @@ jobs:
       - name: pypi
         env:
           TWINE_USERNAME: ${{secrets.TWINE_USERNAME}}
-          TWINE_PASSWORD: ${{secrets.TWINE_PASSWORD}}
         run: |
-          # twine upload dist/*
+          echo "$TWINE_USERNAME"

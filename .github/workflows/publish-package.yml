@@ -32,5 +32,3 @@ jobs:
           TWINE_PASSWORD: ${{secrets.TWINE_PASSWORD}}
         run: |
           # twine upload dist/*
-          echo "$TWINE_PASSWORD"
-          echo "$TWINE_USERNAME"
