@@ -15,9 +15,3 @@ jobs:
         run: python -m unittest discover
       - name: run type checking
         run: mypy fib_py
-      - name: pypi
-        env:
-          TWINE_USERNAME: ${{ secrets.TWINE_USERNAME }}
-          TWINE_PASSWORD: ${{ secrets.TWINE_PASSWORD }}
-        run: |
-          twine upload dist/*
