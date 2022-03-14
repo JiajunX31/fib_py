@@ -2,7 +2,7 @@ name: Publish Python distributions to PyPI
 
 on:
   pull_request:
-    type: [closed]
+    types: [closed]
     branches:
       - main
 
@@ -17,7 +17,7 @@ jobs:
           pip install -r requirements.txt
       - name: update version
         run: python get_latest_version.py
-      - name: Install development dependencies
+      - name: install deployment dependancies
         if: github.event.pull_request.merged == true
         run: |
           pip install twine
