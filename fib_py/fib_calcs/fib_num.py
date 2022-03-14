@@ -1,13 +1,8 @@
-from typing import Optional
-
-# trigger build
-
-
 def recurring_fibonacci_number(number: int) -> int:
     """
     Calculates the fibonacci number needed.
     :param number: (int) the Fibonacci number to be calculated
-    :return: (Optional[int]) the calculated fibonacci number
+    :return: (int) the calculated fibonacci number
     """
     if number < 0:
         raise ValueError("Fibonacci has to be equal or above zero")
