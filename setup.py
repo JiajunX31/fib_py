@@ -13,7 +13,7 @@ setup(
     long_description=ld,
     long_description_content_type="text/markdown",
     url="https://github.com/JiajunX31/fib_py.git",
-    install_requires=[],
+    install_requires=["PyYAML>=6.0", "dill>=0.3.4"],
     packages=find_packages(exclude=("tests",)),
     classifiers=[
         "Development Status :: 4 - Beta",
@@ -25,7 +25,6 @@ setup(
             "fib-number = fib_py.cmd.fib_num:fib_num",
         ]
     },
-    install_requires=["PyYAML>=6.0", "dill>=0.3.4"],
     extras_require={"server": ["Flask>=2.0.0"]},
     python_requires=">=3",
     tests_require=["pytest"],
