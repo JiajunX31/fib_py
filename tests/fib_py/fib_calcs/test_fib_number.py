@@ -24,6 +24,9 @@ class RecurringFibNumberTest(TestCase):
     def test_twenty(self):
         self.assertEqual(6765, recurring_fibonacci_number(20))
 
+    def test_(self):
+        self.assertEqual(144, recurring_fibonacci_number(12))
+
 
 if name == "__main__":
     main()
